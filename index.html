@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--link gerado pelo google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--link gerado pelo google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"><!--link gerado pelo google fonts-->
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <!--os elementos HTML ficam dentro da tag main-->
+    <main>
+        <!--colocamos o titulo e o subtitulo dentro de uma sessão-->
+        <section class="hero">
+            <!--definimos uma classe para o titulo para manipula-lo-->
+            <h1 class="title">Gerador de senhas</h1>
+            <!--definimos uma classe para o subtitulo para manipula-lo-->
+            <p class="subtitle">Utilize o Gerador de senhas para obter uma senha forte e segura</p>
+        </section>
+
+        <section class="field">
+            <!--a section é utilizada para separar essa área do HTML-->
+            <div class="password">
+                <!--a div é utilizada para separar os elementos que serão editados pelo CSS-->
+                <div class="text">
+                    <h2 name="password" id="password"></h2>
+                </div>
+                <div class="actions">
+                    <button onclick="copy()" id="copy2">
+                        <img src="copy.svg" alt="">
+                    </button>
+                    <button onclick="gerenatePassword()" id="renew">
+                        <img src="renew.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="security-indicator"> <!--barra cinza por baixo-->
+                <div id="security-bar" class="bar"></div> <!--barra dinamica que ira mudar de cor-->
+            </div>
+        </section>
+        
+        <section class="controls">
+            <div class="rangeTitle">Personalize a senha</div>
+            <div class="controlsOptions">
+                <!--Esse é o Slider que definirá o tamanho da senha que será gerada. Value é o valor padrão, min
+                é o valor mínimo e max é o valor máximo-->
+                <div class="range">
+                    <input class="slider" type="range" name="password-length" id="password-length" value="16" min="8" max="64">
+                    <p class="textLength">Tamanho: <span id="password-length-span"></span></p>
+                </div>
+                <div class="checkbox">
+                    <input class="check" type="checkbox" name="upper" id="upper" value="upper" checked>
+                    <label for="upper">Maiuscula</label><br>
+                    <input class="check" type="checkbox" name="special" id="special" value="special" checked>
+                    <label for="special">Simbolos</label><br>
+                    <input class="check" type="checkbox" name="numbers" id="numbers" value="numbers" checked>
+                    <label for="numbers">Números</label><br>
+                </div>
+            </div>    
+        </section>
+
+        <section class="copyButton">
+            <!--botão que irá copiar a senha que for gerada-->
+            <button id="copy" onclick="copy()">Copiar</button> <!--o botão chama a função copy-->
+        </section>
+
+    </main>
+</body>
+</html>
