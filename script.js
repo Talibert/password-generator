@@ -1,4 +1,3 @@
-<script>
         //recuperamos o value do elemento input password-length e atribuimos isso a uma variável
         const rangeEl = document.querySelector("#password-length")
         //recuperamos o campo input que ira exibir a senha
@@ -128,4 +127,3 @@
             //essa é uma API de navegadores para copiar textos para a area de colagem do usuário
             navigator.clipboard.writeText(inputEl.textContent)
         }
-    </script>
