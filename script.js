@@ -15,7 +15,7 @@
         //modificamos o valor do span com textContent e colocamos o value do range
         sizeEl.textContent = rangeEl.value
         //declaramos a variável responsável pelo tamanho do password
-        let passwordLength = rangeEl.value
+        let passwordLength = 16
 
         //função responsável por gerar a senha
         function gerenatePassword() {
