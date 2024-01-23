@@ -1,214 +1,215 @@
-/*esse arquivo será nossa folha de estilo para modificar os elementos da página*/
+/* esse arquivo será nossa folha de estilo para modificar os elementos da página */
 body {
-    background-color: #f8fafd;
-    font-family: "Inter", sans- serif;
-    color: #252525;
-    padding: 1.5rem;
-  }
+  background-color: #f8fafd; /* Cor de fundo */
+  font-family: "Inter", sans-serif; /* Tipo de fonte */
+  color: #252525; /* Cor do texto */
+  padding: 1.5rem; /* Espaçamento interno */
+}
 
-  main {
-    /*estamos definindo que tudo dentro do bloco main se estica até, no máximo, 780px
-    Isso ajuda em manter a proporção agradável em telas maiores*/
-    max-width: 1300px;
+main {
+  max-width: 1300px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza os elementos */
+  /* estamos definindo que tudo dentro do bloco main se estica até, no máximo, 780px
+  Isso ajuda em manter a proporção agradável em telas maiores */
+  /* margin: 0 auto serve para centralizar os elementos */
+}
 
-    /*margin: 0 auto serve para centralizar os elementos*/
-    margin: 0 auto;
-  }
-  
-  .hero {
-    /*estamos centralizando os textos do elementos pertencentes a classe hero*/
-    text-align: center;
-    /*estamos aumentando a distância dos elementos da classe hero para os elementos seguintes*/
-    padding-bottom: 3rem;
-  }
+.hero {
+  text-align: center; /* Centraliza o texto */
+  padding-bottom: 3rem; /* Espaçamento inferior */
+  /* estamos centralizando os textos do elementos pertencentes a classe hero */
+  /* estamos aumentando a distância dos elementos da classe hero para os elementos seguintes */
+}
 
-  .hero .title {
-    /*estamos editando informações da classe title dentro da classe hero*/
-    font-size: 3rem;
-    font-weight: bold;
-    padding-bottom: 1.5rem;
-  }
+.hero .title {
+  font-size: 3rem; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  padding-bottom: 1.5rem; /* Espaçamento inferior */
+  /* estamos editando informações da classe title dentro da classe hero */
+}
 
-  .hero .subtitle {
-    font-size: 1.125rem;
-    color: #828282
-  }
-  
-  .field {
-    margin-bottom: 2rem;
-    background-color: #ffffff;
-    box-shadow: 0 1px 2px rgba(132, 148, 165, 0.2); /*adiciona sombreado na section field*/
-    border-radius: 8px;
-  }
+.hero .subtitle {
+  font-size: 1.125rem; /* Tamanho da fonte */
+  color: #828282; /* Cor do texto */
+}
 
-  .password {
-    display: flex; /*coloca os elementos da div um do lado do outro*/
-    align-items: center; /*centraliza os elementos da div de forma vertical*/
-    /*justify-content: center; centraliza os elementos da div de forma horizontal*/
-  }
+.field {
+  margin-bottom: 2rem; /* Espaçamento inferior */
+  background-color: #ffffff; /* Cor de fundo */
+  box-shadow: 0 1px 2px rgba(132, 148, 165, 0.2); /* Sombra */
+  border-radius: 8px; /* Borda arredondada */
+}
 
-  .password .text {
-    padding-left: 0.75rem;
-    border-top-left-radius: 8px;
-    font-size: 3vw;
-    flex: 1;
-    margin: auto;
-    overflow: hidden; /*não deixa o texto ultrapassar o espaço permitido*/
-    white-space: nowrap; /*não deixa quebras de linha acontecerem*/
-  }
+.password {
+  display: flex; /* Coloca os elementos da div um do lado do outro */
+  align-items: center; /* Centraliza os elementos da div de forma vertical */
+  /* justify-content: center; centraliza os elementos da div de forma horizontal */
+}
 
-  
-  .password .actions button{
-    background-color: transparent;
-    border: none;
-    width: 65px;
-    cursor: pointer;
-  }
+.password .text {
+  padding-left: 0.75rem; /* Espaçamento à esquerda */
+  border-top-left-radius: 8px; /* Borda arredondada superior esquerda */
+  font-size: 3vw; /* Tamanho da fonte */
+  flex: 1; /* Expandir */
+  margin: auto; /* Margem automática */
+  overflow: hidden; /* Não deixa o texto ultrapassar o espaço permitido */
+  white-space: nowrap; /* Não deixa quebras de linha acontecerem */
+}
 
-  .password .actions button:hover{
-    background-color: #ebebeb;
-  }
+.password .actions button {
+  background-color: transparent; /* Cor de fundo transparente */
+  border: none; /* Sem borda */
+  width: 65px; /* Largura */
+  cursor: pointer; /* Tipo de cursor */
+}
 
-  #copy2:hover {
-    transform: scale(1.1);
-  }
-  
-  #renew:hover {
-    transform: scale(1.1);
-  }
+.password .actions button:hover {
+  background-color: #ebebeb; /* Cor de fundo ao passar o mouse */
+}
 
-  .password .text {
-    flex: 1; /*isso faz com que o input de texto estique seu tamanho até o máximo possível, colocando os botões no canto*/
-  }
+#copy2:hover {
+  transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
 
-  .password .text input{ /*seleciona especificamente a input*/
-    width: 100%; /*defino que o campo de input pode ocupar o espaço máximo disponível*/
-    box-sizing: border-box;
-    font-size: 2rem;
-    border: none; /*tira a borda do input*/
-    outline: none;
-    cursor: default; /*altera o tipo do cursor*/
-    height: 53px;
-    padding-left: 1rem;
-    transition: all 0.2s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    border-top-left-radius: 8px;
-  }
+#renew:hover {
+  transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
 
-  .controls {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 1px 2px rgba(132, 148, 165, 0.2);
-  }
+.password .text {
+  flex: 1; /* Isso faz com que o input de texto estique seu tamanho até o máximo possível, colocando os botões no canto */
+}
 
-  .controls .controlsOptions{
-    display:flex;
-    margin-top: 1rem;
-  }
+.password .text input {
+  width: 100%; /* Largura total */
+  box-sizing: border-box; /* Inclui a borda na largura total */
+  font-size: 2rem; /* Tamanho da fonte */
+  border: none; /* Sem borda */
+  outline: none; /* Sem contorno */
+  cursor: default; /* Cursor padrão */
+  height: 53px; /* Altura */
+  padding-left: 1rem; /* Espaçamento à esquerda */
+  transition: all 0.2s; /* Transição suave */
+  -webkit-user-select: none; /* Não permite seleção pelo usuário */
+  -moz-user-select: none; /* Não permite seleção pelo usuário */
+  user-select: none; /* Não permite seleção pelo usuário */
+  border-top-left-radius: 8px; /* Borda arredondada superior esquerda */
+}
 
-  .controls .controlsOptions .range {
-    flex: 1;
-    margin: auto;
-  }
+.controls {
+  background-color: #ffffff; /* Cor de fundo */
+  border-radius: 8px; /* Borda arredondada */
+  padding-bottom: 1rem; /* Espaçamento inferior */
+  padding-top: 1rem; /* Espaçamento superior */
+  margin-bottom: 2rem; /* Espaçamento inferior */
+  box-shadow: 0 1px 2px rgba(132, 148, 165, 0.2); /* Sombra */
+}
 
-  .controls .controlsOptions .range .slider {
-    width: 100%;
-    background: #dbdbdb;
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    border-radius: 8px;
-    height: 10px;
-    margin-left: 1rem;
-    opacity: 0.7;
-    transition: opacity 0.2s;
-    cursor: pointer;
-  } 
+.controls .controlsOptions {
+  display: flex; /* Coloca os elementos da div um do lado do outro */
+  margin-top: 1rem; /* Espaçamento superior */
+}
 
-  .controls .controlsOptions .range .slider:hover {
-    opacity: 1;
-  } 
-  
-  .controls .controlsOptions .range .textLength {
-    padding-left: 1rem;
-    margin-top: 0.5rem;
-  }
+.controls .controlsOptions .range {
+  flex: 1; /* Expandir */
+  margin: auto; /* Margem automática */
+}
 
-  .controls .rangeTitle  {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 100;
-    border-bottom: 0.05rem solid rgb(24, 20, 243);
-    padding-bottom: 1rem;
-    font-size: 1.3rem;
-  }
+.controls .controlsOptions .range .slider {
+  width: 100%; /* Largura total */
+  background: #dbdbdb; /* Cor de fundo */
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 8px; /* Borda arredondada */
+  height: 10px; /* Altura */
+  margin-left: 1rem; /* Espaçamento à esquerda */
+  opacity: 0.7; /* Opacidade */
+  transition: opacity 0.2s; /* Transição suave */
+  cursor: pointer; /* Tipo de cursor */
+}
 
-  .controls .controlsOptions .checkbox {
-    margin-left: 1.75rem;
-    padding-right: 1rem;
-    display: block;
-  }
+.controls .controlsOptions .range .slider:hover {
+  opacity: 1; /* Opacidade ao passar o mouse */
+}
 
-  .controls .controlsOptions .checkbox .check {
-    cursor: pointer;
-  }
+.controls .controlsOptions .range .textLength {
+  padding-left: 1rem; /* Espaçamento à esquerda */
+  margin-top: 0.5rem; /* Espaçamento superior */
+}
 
-  .copyButton {
-    text-align: center;
-  }
+.controls .rangeTitle {
+  margin-left: 1rem; /* Espaçamento à esquerda */
+  margin-right: 1rem; /* Espaçamento à direita */
+  width: 100; /* Largura */
+  border-bottom: 0.05rem solid rgb(24, 20, 243); /* Borda inferior */
+  padding-bottom: 1rem; /* Espaçamento inferior */
+  font-size: 1.3rem; /* Tamanho da fonte */
+}
 
-  #copy {
-    opacity: 0.8;
-    border: none;
-    background-color: rgb(24, 20, 243);
-    padding: 10px;
-    font-size: 1rem;
-    font-family: "Inter", sans- serif;
-    font-weight: bold;
-    border-radius: 10px;
-    color: #fff;
-    transition: opacity 0.2s;
-    cursor: pointer;
-  }
+.controls .controlsOptions .checkbox {
+  margin-left: 1.75rem; /* Espaçamento à esquerda */
+  padding-right: 1rem; /* Espaçamento à direita */
+  display: block; /* Exibe como bloco */
+}
 
-  #copy:hover{
-    opacity: 1;
-    background-color: rgb(24, 20, 243)
-  }
+.controls .controlsOptions .checkbox .check {
+  cursor: pointer; /* Tipo de cursor */
+}
 
-  .security-indicator {
-    height: 10px;
-    background-color: #dbdbdb;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
+.copyButton {
+  text-align: center; /* Centraliza o texto */
+}
 
-  .security-indicator .bar {
-    height: 10px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    transition: all 0.3s; /*adiciona um efeito de transição nas animações da barra enchendo*/
-  }
+#copy {
+  opacity: 0.8; /* Opacidade */
+  border: none; /* Sem borda */
+  background-color: rgb(24, 20, 243); /* Cor de fundo */
+  padding: 10px; /* Preenchimento */
+  font-size: 1rem; /* Tamanho da fonte */
+  font-family: "Inter", sans-serif; /* Tipo de fonte */
+  font-weight: bold; /* Peso da fonte */
+  border-radius: 10px; /* Borda arredondada */
+  color: #fff; /* Cor do texto */
+  transition: opacity 0.2s; /* Transição suave */
+  cursor: pointer; /* Tipo de cursor */
+}
 
-  /*as classes .bar e .completed/critical/warning/safe não podem ser separadas por um espaço, pois elas
-  serão utilizadas juntas. Quando um mesmo elemento possui mais de uma classe, utilizamos assim*/
-  .security-indicator .bar.completed {
-    border-top-right-radius: 0;
-    background-color: #27ae60;
-  }
-  .security-indicator .bar.critical { 
-    background-color: #eb5757;
-  }
-  .security-indicator .bar.warning {
-    background-color: #f2c94c;
-  }
-  .security-indicator .bar.safe {
-    background-color: #27ae60;
-  }
+#copy:hover {
+  opacity: 1; /* Opacidade ao passar o mouse */
+  background-color: rgb(24, 20, 243); /* Cor de fundo ao passar o mouse */
+}
+
+.security-indicator {
+  height: 10px; /* Altura */
+  background-color: #dbdbdb; /* Cor de fundo */
+  border-bottom-left-radius: 8px; /* Borda arredondada inferior esquerda */
+  border-bottom-right-radius: 8px; /* Borda arredondada inferior direita */
+}
+
+.security-indicator .bar {
+  height: 10px; /* Altura */
+  border-bottom-left-radius: 8px; /* Borda arredondada inferior esquerda */
+  border-top-right-radius: 8px; /* Borda arredondada superior direita */
+  border-bottom-right-radius: 8px; /* Borda arredondada inferior direita */
+  transition: all 0.3s; /* Adiciona um efeito de transição nas animações da barra enchendo */
+}
+
+/* As classes .bar e .completed/critical/warning/safe não podem ser separadas por um espaço, pois elas
+serão utilizadas juntas. Quando um mesmo elemento possui mais de uma classe, utilizamos assim */
+
+.security-indicator .bar.critical {
+  background-color: #eb5757; /* Cor de fundo */
+}
+
+.security-indicator .bar.warning {
+  background-color: #f2c94c; /* Cor de fundo */
+}
+
+.security-indicator .bar.safe {
+  background-color: #27ae60; /* Cor de fundo */
+}
+
+.security-indicator .bar.completed {
+  border-top-right-radius: 0; /* Borda arredondada superior direita */
+  background-color: #57a8eb; /* Cor de fundo */
+}

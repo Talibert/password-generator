@@ -89,27 +89,20 @@
             //adiciona ou remove segurança de acordo com o tamanho da senha
             passwordSecurity += length.value * 1
 
-            if (passwordSecurity < 30){
-                securityBarEl.classList.add("critical")
-                securityBarEl.classList.remove("warning")
-                securityBarEl.classList.remove("completed")
-                securityBarEl.classList.remove("safe")
-            }   else if (passwordSecurity >= 30 && passwordSecurity <60){
-                    securityBarEl.classList.remove("critical")
-                    securityBarEl.classList.add("warning")
-                    securityBarEl.classList.remove("completed")
-                    securityBarEl.classList.remove("safe")
-                }   else if (passwordSecurity >=60 && passwordSecurity <100){
-                        securityBarEl.classList.remove("critical")
-                        securityBarEl.classList.remove("warning")
-                        securityBarEl.classList.remove("completed")
-                        securityBarEl.classList.add("safe")
-                    }   else if(passwordSecurity >=100){
-                            securityBarEl.classList.remove("critical")
-                            securityBarEl.classList.remove("warning")
-                            securityBarEl.classList.add("completed")
-                            securityBarEl.classList.add("safe")
-                        }
+            //remove todas as classes a cada alteração da senha
+            securityBarEl.classList.remove("critical", "warning", "completed", "safe");
+
+            //adiciona a classe de acordo com o passwordSecurity
+            if (passwordSecurity < 30) {
+                securityBarEl.classList.add("critical");
+            } else if (passwordSecurity < 60) {
+                securityBarEl.classList.add("warning");
+            } else if (passwordSecurity < 100) {
+                securityBarEl.classList.add("safe");
+            } else {
+                securityBarEl.classList.add("completed")
+            }
+
             securityBarEl.style.width = `${passwordSecurity}%`
         }
 

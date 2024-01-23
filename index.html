@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><!--link gerado pelo google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--link gerado pelo google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"><!--link gerado pelo google fonts-->
-    <link href="https://talibert.github.io/password-generator/reset.css" rel="stylesheet">
-    <link href="https://talibert.github.io/password-generator/style.css" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Gerador de Senhas</title>
 </head>
 <body>
@@ -17,9 +17,9 @@
         <!--colocamos o titulo e o subtitulo dentro de uma sessão-->
         <section class="hero">
             <!--definimos uma classe para o titulo para manipula-lo-->
-            <h1 class="title">Gerador de senhas</h1>
+            <h1 class="title">Gerador de Senhas</h1>
             <!--definimos uma classe para o subtitulo para manipula-lo-->
-            <p class="subtitle">Utilize o Gerador de senhas para obter uma senha forte e segura</p>
+            <p class="subtitle">Utilize o Gerador de senhas para obter uma senha forte e segura.</p>
         </section>
 
         <section class="field">
@@ -50,7 +50,7 @@
                 é o valor mínimo e max é o valor máximo-->
                 <div class="range">
                     <input class="slider" type="range" name="password-length" id="password-length" value="16" min="8" max="64">
-                    <p class="textLength">Tamanho: <span id="password-length-span"></span></p>
+                    <p class="textLength">Caracteres: <span id="password-length-span"></span></p>
                 </div>
                 <div class="checkbox">
                     <input class="check" type="checkbox" name="upper" id="upper" value="upper" checked>
